@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>titulo de la pagina</title>
+        <meta charset = "UTF-8">
+    </head>
+    <body>
+        <h1>Tutorial de MySQL</h1>
+        <a href = "#introduccion">introduccion</a>
+        <br>
+        <a href = "#mostrarbasededatos">mostrar base de datos</a>
+        <br>
+        <a href = "#creaciontabla">creacion de tabla y mostrar sus campos</a>
+        <br>
+        <a href = "#cargarregistros">carga de registros a una tabla y su recuperacion</a>
+        <br>
+        <a name = "introduccion"></a>
+        <br>
+        <h2>Introduccion</h2>
+        <p>
+            SQL, Stroctured Query Language (lenguake de consulta estructurado) es un lenguaje de programacion para trabajar con base de datos relacionales como MySQL, oracle, etc. <br>
+            MySql, es un interpretador de SQL, es un servidor de base de datos.<br>
+            MySQL permite crear base de datos y tablas, insertar datos, modificarlos, eliminarlos, ordenarlos, 
+            hacer consultas y realizar muchas operaciones,etc., resumiendo: adminjistrar vases de datos.<br>
+            Ingresando instrucciones en la linea de comandos o embebidas en un lenguake como PHP nos comunicaos
+            con el servidor. cada sentencia debe acabar con punto y coma (;)<br>
+            La sensibilidad a mayusculas y minusculas, es decir, si hace diferencia entre ellas, depende del 
+            sistema operativo, windows no es sensible, pero linux si. por ejemplo windows interpreta igualmente
+            las siguientes sentencias:<br>
+                create database administracion;<br>
+                Create DataBase administracion;<br>
+            pero linux interpretara como un error la segunda.<br>
+            se recomienda usar siempre miusculas. es mas el sitio mysqlya.com esta instalado sobre un servidor
+            Linux por lo que todos los ejercicios deberan respetarse mayusculas y minusculas.
+        </p>
+        <a name = "mostrarbasededatos"></a>
+        <h2>Show databases</h2>
+        <p>
+            Una base de datos es un conjunto de tablas.<br>
+            Una base de datos tiene un nombre con el cual accederemos a lla. <br>
+            Vamos a trabajar en una base de datos ya creada en el sitio, llamada "administracion".<br>
+            Para que el sercidor nos muestre las bases de datos existentes, se lo solicitamos enviando la instruccion:<br>
+            show databases;<br>
+            Nos mostrara los nombres de las bases de datos, debe aparecer en este sitio "administracion".<br>
+        </p>
+        <a name = "creaciontabla"></a>
+        <h2>Creacion de una tabla y mostrar sus campos</h2>
+        <p>
+            Una base de datos almacena sus datos en tablas.<br>
+            Una tabla es una estructura de datos que organiza los datos en columnas y filas;cada columna es un campo
+            (o atributo) ya cada fila, un registro. La interseccion de una columna con una fila, contiene un dato
+            especifico, un solo valor.<br>
+            Cada registro contiene un dato por cada columna de la tabla.<br>
+            Cada campo (columna) debe tener un nombre. El nombre del campo hace referencia a la informacion que
+            almacenara.<br>
+            Cada cmapo (columna) tambien puede definir el tipo de dato que almacenara.<br>
+        </p>
+        <a name = "cargarregistros"></a>
+        <h2>Cargar registros a una tabla y su recuperacion</h2>
+        <p>
+            Usamos "insert into". Especificamos los nombres de los campos entre parentesis y separados por comandos
+            y luego los calores para cada campo, tambien entre parentesis y sepatados por comas.<br>
+            Es importante ingresar los valores en el mismo orden en que se nombrean los campos, si engresamos
+            los datos en otro orden, no aparece un mensake de error y los datos se guardan de modo incorrecto.<br>
+            Note que los datos ingresados, como corresponden a campos de cadenas de caracteres se colocan
+            entre comillas simples. Las comillas simples son OBLIGATORIAS.
+        </p>
+    </body>
+</html>
