@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prueba de formulario</title>
+
+        <meta charset = "UTF-8">
+    </head>
+
+    <body>
+        <form action = "registrardatos.php" method = "post">
+            selecciones uno o varios mail (Presione Ctrl para elegir varios mails)
+            <p>
+            <select name = "mails[]" size = "5" multiple>
+                <option value = "1">Gmail</option>
+                <option value = "2">Yahoo</option>
+                <option value = "3">Hotmail</option>
+            </select>
+            <br>
+            <input type = "submit" value = "Enviar">
+        </form>
+    </body>
+</html>
